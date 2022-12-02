@@ -15,8 +15,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
         nasaApi.getAstronomyPictureOfTheDay { astronomyPicture ->
             astronomyPicture?.let {
+                findViewById<TextView>(R.id.tvTitle).text = it.title
                 Picasso.get().load(it.url).into(findViewById<ImageView>(R.id.image))
-                findViewById<TextView>(R.id.text).text = it.explanation
+                findViewById<TextView>(R.id.tvExplanation).text = it.explanation
             }
         }
     }
