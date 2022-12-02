@@ -1,0 +1,12 @@
+local.properties
+.idea
+.gradle
+build/
+*/build/
+*.iml
+*.orig
+apks/
+app/distribution
+.DS_Store
+captures/
+.java-version
