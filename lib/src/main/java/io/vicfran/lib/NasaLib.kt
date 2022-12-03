@@ -2,8 +2,8 @@ package io.vicfran.lib
 
 class NasaLib {
 
-    private val nasaApi: NasaApi by lazy { NasaApi() }
+    private val nasaRepository: NasaRepository by lazy { NasaRepository(NasaApi()) }
 
-    fun getAstronomyPictureOfTheDay(callback: (AstronomyPicture?) -> Unit) = nasaApi.getAstronomyPictureOfTheDay(callback)
+    fun getAstronomyPictureOfTheDay(callback: (AstronomyPicture?) -> Unit) = nasaRepository.getAstronomyPictureOfTheDay(callback)
 
 }
