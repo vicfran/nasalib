@@ -7,7 +7,7 @@ import com.github.kittinunf.fuel.core.Request
 import com.github.kittinunf.fuel.core.Response
 import com.github.kittinunf.fuel.gson.responseObject
 
-class NasaApi {
+internal class NasaApi {
 
     private val TAG = "nasalib-NasaApi"
     private val apiKey = "DEMO_KEY"

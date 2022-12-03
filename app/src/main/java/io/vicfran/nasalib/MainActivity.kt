@@ -4,11 +4,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
-import io.vicfran.lib.NasaApi
+import io.vicfran.lib.NasaLib
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
-    private val nasaApi: NasaApi by lazy { NasaApi() }
+    private val nasaApi: NasaLib by lazy { NasaLib() }
 
     override fun onResume() {
         super.onResume()
