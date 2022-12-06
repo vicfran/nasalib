@@ -1,6 +1,6 @@
-package io.vicfran.lib
+package io.vicfran.nasalib.net
 
-data class AstronomyPicture(
+data class AstronomyPictureEntity(
     val date: String? = "",
     val explanation: String? = "",
     val hdurl: String? = "",
