@@ -1,4 +1,6 @@
-package io.vicfran.lib
+package io.vicfran.lib.persistence
+
+import io.vicfran.lib.AstronomyPicture
 
 class NasaDatabase {
 
