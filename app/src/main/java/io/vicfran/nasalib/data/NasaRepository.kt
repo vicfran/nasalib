@@ -1,4 +1,4 @@
-package io.vicfran.nasalib
+package io.vicfran.nasalib.data
 
 import androidx.lifecycle.LiveData
 import io.vicfran.nasalib.persistence.AstronomyPictureDao
@@ -11,7 +11,7 @@ class NasaRepository @Inject constructor(
 ) {
 
     fun getAstronomyPictureOfTheDay(): LiveData<AstronomyPicture> {
-        val today = SimpleDateFormat("yyyy-MM-DD", Locale.getDefault()).format(Date())
+        val today = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         return astronomyPictureDao.getAstronomyPictureByDate(today)
     }
 

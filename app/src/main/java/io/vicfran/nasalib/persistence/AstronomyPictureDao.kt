@@ -2,7 +2,7 @@ package io.vicfran.nasalib.persistence
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import io.vicfran.nasalib.AstronomyPicture
+import io.vicfran.nasalib.data.AstronomyPicture
 
 @Dao
 interface AstronomyPictureDao {

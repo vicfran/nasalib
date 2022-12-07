@@ -1,4 +1,4 @@
-package io.vicfran.nasalib
+package io.vicfran.nasalib.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

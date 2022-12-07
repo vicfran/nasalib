@@ -6,6 +6,7 @@ import com.github.kittinunf.fuel.core.FuelManager
 import com.github.kittinunf.fuel.core.Request
 import com.github.kittinunf.fuel.core.Response
 import com.github.kittinunf.fuel.gson.responseObject
+import io.vicfran.nasalib.data.AstronomyPicture
 
 internal class NasaApi {
 
@@ -16,7 +17,7 @@ internal class NasaApi {
         FuelManager.instance.basePath = "https://api.nasa.gov/planetary/apod?api_key=$apiKey"
     }
 
-    fun getAstronomyPictureOfTheDay(callback: (io.vicfran.nasalib.AstronomyPicture?) -> Unit) {
+    fun getAstronomyPictureOfTheDay(callback: (AstronomyPicture?) -> Unit) {
         Fuel.get("").responseObject { request, response, result ->
             log(request, response, result)
 
